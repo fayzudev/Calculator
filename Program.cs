@@ -1,4 +1,16 @@
-﻿System.Console.WriteLine("Here I Started a calculator program");
+﻿string password;
+do
+{
+    System.Console.Write("Enter the password for continuing the program: ");
+    password=System.Console.ReadLine();
+    if(password!="pa$$w0rd")
+    {
+        System.Console.WriteLine("You typed wrong password, please type again!");
+    }
+}
+while(password!="pa$$w0rd");
+
+System.Console.WriteLine("Here I Started a calculator program");
 System.Console.Write("1-sonni kiriting: ");
 int a = int.Parse(System.Console.ReadLine());
 System.Console.Write("2-sonni kiriting: ");
@@ -19,8 +31,8 @@ else
 
 string message=
     a>=b
-        ? "saadsad"
-        : "dsada";
+        ? "1-son ikkinchisidan katta"
+        : "2-son birinchisidan katta";
 System.Console.WriteLine(message);
 
 // switch(operation)
@@ -61,4 +73,3 @@ string result = operation switch
 
 };
 System.Console.WriteLine(result);
-

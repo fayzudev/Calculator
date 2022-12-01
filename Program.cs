@@ -11,6 +11,10 @@ do
 while(password!="pa$$w0rd");
 
 System.Console.WriteLine("Here I Started a calculator program");
+System.Console.Write("Isminggizni kiiriting: ");
+string name= System.Console.ReadLine();
+System.Console.Write("Yoshingizni kiriting: ");
+int age = int.Parse(System.Console.ReadLine());
 System.Console.Write("1-sonni kiriting: ");
 int a = int.Parse(System.Console.ReadLine());
 System.Console.Write("2-sonni kiriting: ");
@@ -73,3 +77,16 @@ string result = operation switch
 
 };
 System.Console.WriteLine(result);
+
+System.Console.WriteLine();
+string[] array1=new string[4];
+array1[0]="Ali";
+array1[1]="Vali";
+array1[2]="Uli";
+array1[3]=name;
+int[] age_a={15,2,25,age};
+
+for(int i=0; i<array1.Length;i++)
+{
+    System.Console.WriteLine($"{array1[i]}ning yoshi {age_a[i]}da");
+}
